@@ -1,7 +1,7 @@
 ---
 title: "Answers Lab2"
-author: "You Name"
-date: "12/6/2018"
+author: "Carlos Carrillo Boj"
+date: "29/12/2018"
 output: html_document
 ---
 
@@ -18,19 +18,27 @@ This is an R Markdown document including the solutions to the laboratory 2 for t
 Using the functions implemented in the file `cpe.R`, it is possible to create a data frame containing the following columns:
 
 ```{r file_load, error=FALSE}
-# source("./cpe.R")
-# df <- ParseCPEData()
+source("./cpe.R")
+df <- ParseCPEData()
+colnames(df)
 ```
 
 Complete previously defined functions so that the package allows the generation of a data frame containing the data parsed from the CPE XML file.
 
-```{r colnames, include=FALSE}
-colnames(df)
+```{r colnames, include=TRUE}
+
 ```
 
 Including fields such as...
 
 
-```{r important_columns, include=FALSE}
-
+```{r important_columns, include=TRUE}
+names(df)
 ```
+
+
+The summary of the dataframe is:
+```{r summary, include=TRUE}
+summary(df)
+```
+
